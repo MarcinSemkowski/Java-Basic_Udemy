@@ -3,7 +3,7 @@ package Arrays_Java_inbuilt_Lists_Autoboxing_and_Unboxing.L_12;
 import java.util.*;
 
 public class Main {
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static List<Album> albums = new ArrayList<>();
     public static void main(String[] args) {
 
         Album album = new Album("Storm bringer","Deep Purple");
@@ -33,7 +33,7 @@ public class Main {
         albums .add(album);
 
 
-        LinkedList<Song> playList = new LinkedList<>();
+        List<Song> playList = new Vector<>();
         albums.get(0).addToPlaylist("You can do it right",playList);
         albums.get(0).addToPlaylist("Holy Man",playList);
         albums.get(0).addToPlaylist("Speed king",playList);
@@ -48,7 +48,7 @@ public class Main {
 
 
 
-    private static void play(LinkedList playList){
+    private static void play(List playList){
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean foward = true;
@@ -147,7 +147,7 @@ public class Main {
         }
 
 
-        private static void printList(LinkedList playList){
+        private static void printList(List playList){
             Iterator<Song> iterator = playList.iterator();
             System.out.println("=============================");
             while(iterator.hasNext()){
