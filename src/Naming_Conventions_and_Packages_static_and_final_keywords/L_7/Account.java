@@ -31,7 +31,21 @@ public class Account {
         if(withdraw < 0){
             this.transations.add(withdraw);
             this.balance += withdraw;
-            System.out.println(amount + " withdraw.Balance is now ");
+            System.out.println(amount + " withdraw.Balance is now " + this.balance);
+        }
+        else{
+            System.out.println("Cannot withdraw negative sums");
         }
     }
+
+
+
+    public void calculateBalance(){
+        this.balance = 0;
+        for(int i : this.transations){
+            this.balance +=i;
+        }
+        System.out.println("Calculted balance is " + this.balance);
+    }
+
 }
