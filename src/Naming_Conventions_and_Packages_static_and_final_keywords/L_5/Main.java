@@ -2,7 +2,7 @@ package Naming_Conventions_and_Packages_static_and_final_keywords.L_5;
 
 public class Main {
     public static void main(String[] args) {
-        String varFour = "this is private to main() ";
+        String varFour = "this is private to Main() ";
         ScopeCheck scopeInstance = new ScopeCheck();
          scopeInstance.useInner();
          ScopeCheck.InnerClass innerClass = scopeInstance.new InnerClass();
